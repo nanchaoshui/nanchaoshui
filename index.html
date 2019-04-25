@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>木莺</title>
+<style type="text/css">
+body{width:600px;margin:2em auto;font-family:"Microsoft YaHei";}
+header{border-bottom:1px solid #ccc;}
+article{font-size:16px;}
+article ul{padding:0;}
+article li{padding:.4em 0;line-height:20px;}
+.year{font-weight:bold;}
+.poem,.year{list-style-type:none;}
+.poem a{padding:0 1.2em;text-decoration:none;color:#f00;}
+.poem a:hover{color:#333;text-decoration:underline;}
+.poem time{color:#999;font-size:14px;}
+.poem pre{margin:1em 0 1.2em 6.2em;font-family:"Microsoft YaHei";}
+</style>
+</head>
+<body>
+
+<header>
+<h2>木莺</h2>
+</header>
+
+<article>
+<ul>
+<li class="year">2016</li>
+
+<li class="poem">
+<time>2016-08-10</time>
+<a href="" title="玫瑰">玫瑰</a>
+<pre>
+他总是
+在千灯万盏的夜晚独自嚎啕大哭
+
+他心脏上的那朵玫瑰
+开了又败  败了又开
+</pre>
+</li>
+
+<li class="poem">
+<time>2016-08-10</time>
+<a href="" title="请不要认真的活着">请不要认真的活着</a>
+<pre>
+真实的生活不是
+不索取无关的远景
+不纠缠于多余的情绪和评判
+不妄想
+不在其中自我沉醉
+不伤害
+不与自己和他人为敌
+不表演
+不相信他人表演
+
+年轻的你
+应天马行空
+应妄想
+应纠缠于旺盛的情欲
+应沉醉于自我
+应与整个世界为敌
+
+趁着年轻
+请不要认真的活着
+</pre>
+</li>
+<li class="poem">
+<time>2007-05-27</time>
+<a href="" title="走">走</a>
+<pre>
+慢慢走
+慢慢走
+路的尽头
+是我的手
+</pre>
+</li>
+</ul>
+</article>
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script>
+$(function(){
+  $(".poem pre").hide();
+  $(".poem a").click(function(event){
+    event.preventDefault();
+    $(this).next().slideToggle(2000);
+  });
+});
+</script>
+</body>
